@@ -1,0 +1,14 @@
+#include<stdio.h>
+int f(int n){
+    if(n==1) return 1;
+    else return f(n-1)*n;
+}
+int main(){
+    int n,sum=0,i;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        sum+=f(i);
+    }
+    printf("%d",sum);
+    return 0;
+}
